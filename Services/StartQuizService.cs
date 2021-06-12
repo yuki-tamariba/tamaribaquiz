@@ -37,6 +37,11 @@ public class StartQuiz
       {
         string reply_token = item.replyToken;
         string reply_text = item.message.text;
+        //
+        if(reply_text == "クイズ")
+        {
+          reply_text = "じゅんびちゅー";
+        }
         try	
         {
           var payload = new{
